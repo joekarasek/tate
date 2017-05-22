@@ -107,7 +107,7 @@
 /// The Nav Color Mixin
 /// @param $color - the text color
 /// @param {number} $child [false] - the `nth-child`
-@mixin nav-color($color, $child:false, $weight:700) {
+@mixin nav-color($color, $child:false, $weight:400) {
   @if $child {
     li:nth-child(#{$child}) {
       & a {
