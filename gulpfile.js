@@ -8,6 +8,8 @@ const config        = require('./gulpconfig.js');
 
 // ========================
 // Joe' Gulp Tasks
+// Populates specific gulp tasks based on gulpconfig.js
+// Also adds active tasks to the tasks object in their appropriate arrays
 // ========================
 const tasks = {
   compile: [],
@@ -16,8 +18,6 @@ const tasks = {
   clean: [],
   default: ['watch'],
 };
-// Populates specific gulp tasks based on gulpconfig.js
-// Also adds active tasks to the tasks object in their appropriate arrays
 joesGulpTasks(gulp, config, tasks);
 
 
