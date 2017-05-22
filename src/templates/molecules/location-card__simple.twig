@@ -1,0 +1,30 @@
+<div class="location-card">
+
+    <div class="location-card__logo--wrapper">
+        <img  src="assets/A+_Dental_Logo.png" alt="{{ mainDoctor }}" class="location-card__logo">
+    </div>
+
+    <div class="location-card__content">
+        <h4 class="location-card__doctor">Jaha Howard, DDS, MS</h4>
+        {#<p class="location-card__doctor-sub">GENERAL & COSMETIC DENTIST</p>#}
+        <p class="location-card__address">4300 Paces Ferry Rd, Suite 405<br>Atlanta, GA 30339</p>
+        <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
+            <h6 class="location-card__map-link underline">Click to view map & directions</h6>
+        </a>
+        <p class="location-card__new-patient-text">New Patient Hotline</p>
+        <a href="tel:{{ newPhone }}" class="location-card__new-patient-number">{{ newPhoneNoBreak }}</a>
+        <p class="location-card__existing-patient-text">Existing patients:
+            <a href="tel:{{ existingPhone }}" class="link-no-style location-card__existing-patient-number">{{ existingPhoneNoBreak }}</a>
+        </p>
+        <a class="btn align-fix location-card__btn btn--style-two" data-toggle="modal" data-target="#requestAppointmentForm">Request an Appointment</a>
+        {#{% include 'atoms/hours-table.twig' %}#}
+
+        <a href="http://www.viningsjubilee.com/" target="_blank" class="location-card__jubilee">
+            <img src="assets/vinings-logo.jpg" alt="Vinings Jubilee">
+        </a>
+        <div class="location-card__social-media">
+            {% include 'molecules/social-media-links.twig' %}
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
