@@ -77,7 +77,6 @@ h6 {
 
 .h1,
 h1 {
-	letter-spacing: 2.6px;
 	@include h1();
 }
 
@@ -89,7 +88,6 @@ h1 {
 
 .h2,
 h2 {
-	letter-spacing: 2.6px;
 	@include h2();
 	@media (max-width: $width-xs) {
 		line-height: 1.1;
