@@ -1,22 +1,21 @@
 a.btn,
 button.btn {
-  font-family: $ff-poppins;
-  font-weight: 400 !important;
+  font-family: $ff-mont;
+  font-weight: 600 !important;
   @include font-size(18px, 18px, 17px, 16px, 14px);
-  letter-spacing: 1px;
 
-  background-color: #FFA101;
+  background-color: #88B13B;
   color: #000000;
-  border-radius: 10px;
-  border: solid 2px #000000;
+  border-radius: 35px;
+  border: solid 2px #ffffff;
   padding: 10px 40px;
 
   &:hover, &:focus {
-    background-color: darken(#FFA101, 15% );
+    background-color: darken(#88B13B, 15% );
     //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
     transition: all .3s ease;
     text-decoration: none;
-    color: $c-white;
+    color: #000000;
   }
 
   //&.btn--style-two {
