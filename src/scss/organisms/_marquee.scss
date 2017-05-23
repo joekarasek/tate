@@ -29,13 +29,40 @@
 
 
   .slide1 {
-    //.slide__title {
-    //  color: #5a710d;
-    //  font-family: $ff-berkshir;
-    //  margin-bottom: 20px;
-    //  line-height: 0.8;
-    //  font-weight: 400;
-    //}
+    .slide__title {
+      color: #435363;
+      font-family: $ff-poly;
+      line-height: 0.8;
+      font-weight: 400;
+      text-align: left;
+      font-style: italic;
+      margin-bottom: 0;
+    }
+    .slide__title-smile {
+      color: #006674;
+      @include font-size(138px,
+              100px,
+              80px,
+              70px,
+              70px);
+      font-family: $ff-mont;
+      font-weight: 700;
+      text-align: right;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    .slide__byline {
+      color: #4c4c4c;
+      font-family: $ff-poly;
+      font-style: italic;
+      border-top: 2px solid #4C4C4C;
+      border-bottom: 2px solid #4C4C4C;
+      @include font-size(28px,
+              23px,
+              35px,
+              30px,
+              30px);
+    }
 
     .slide__copy {
       @include font-size(26px,
@@ -43,18 +70,20 @@
               24px,
               24px,
               24px);
-      color: #000000;
+      color: #435363;
+      font-family: $ff-mont;
       margin-top: 5px;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       line-height: 1;
       font-weight: 400;
     }
 
-    .row {
-      transform: translateY(-100%);
-      top: 100%;
-      padding-bottom: 15px;
-    }
+    //Align to bottom of slide
+    //.row {
+    //  transform: translateY(-100%);
+    //  top: 100%;
+    //  padding-bottom: 15px;
+    //}
   }
   .slide2 {
     .slide__title {
