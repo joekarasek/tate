@@ -54,7 +54,7 @@
   });
 
   // ======= Google Maps =======
-  HelloWorldDevsTysonSteele.googleMap('#google-map5', '33.8646783,-84.4668918', '33.8646783,-84.4668918');
+  HelloWorldDevsTysonSteele.googleMap('#google-map5', '39.3827374,-77.2517467', '39.3827374,-77.2517467');
 
 
 }(jQuery, HelloWorldDevsTysonSteele));
