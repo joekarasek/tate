@@ -1,31 +1,39 @@
 <section id="section-services">
     <div class="heading">
         <div class="container">
-            <h2>Services We Offer</h2>
-            <p>Select a service below for more information. Remember, prevention is always better than treatment, so if it’s been a while since your child has seen a dentist, please give us a call or click to <a href="#" data-toggle="modal" data-target="#requestAppointmentForm">request&nbsp;an&nbsp;appointment</a>.</p>
+            <h2>Our Services</h2>
+            <p>By actively preventing disease and decay through regular home care, professional dental cleanings and regular exams, we’ll partner with you to maintain your healthy, beautiful smile. Prevention is always better than treatment, so if it’s been a while since you’ve seen a dentist, please give us a call or <a href="#" data-toggle="modal" data-target="#requestAppointmentForm">click&nbsp;to&nbsp;request&nbsp;an&nbsp;appointment</a>.</p>
         </div>
     </div>
 
-    <div class="container">
-        <div class="pyramid-list">
-            {% for service in services %}
-                {% if loop.index == 1 or loop.index == 4 or loop.index == 7 or loop.index == 10 or loop.index == 12 %}
-                    {% set color='green' %}
-                {% elseif loop.index == 3 or loop.index == 6 or loop.index == 9 %}
-                    {% set color='blue' %}
-                {% elseif loop.index == 2 or loop.index == 5 or loop.index == 8 or loop.index == 11 %}
-                    {% set color='red' %}
-                {% endif %}
-
-
-            <div class="pyramid-list__item">
-                <img src="assets/service_arrow--{{ color }}.png" alt="{{ color }}arrow icon">
-                <a href="#" data-toggle="modal" data-target="#service--{{ service.modalTarget }}" class="pyramid-list__link">{{ service.title }}</a>
+    <div class="service-slab service-slab--family">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-7">
+                    <h2 class="service-slab__title">Whole-Family<br>Dentistry with Heart</h2>
+                    <h3 class="service-slab__byline">Care for every patient, no matter their age</h3>
+                    <p class="service-slab__copy">Dr. Haley Tate and his dedicated team find it very rewarding to provide
+                        dental care to you and your family. As a team, they participate in local community events such as
+                        the Give Kids a Smile Program and Dentistry for the Heart. By giving their time at these events,
+                        they meet many wonderful kids and adults and are able to provide for those who cannot afford
+                        care.</p>
+                </div>
             </div>
-            {% endfor %}
         </div>
+        <img src="assets/services/family-care-mobile.jpg" alt="Family with great smiles" class="hidden-lg hidden-sm hidden-md">
     </div>
 
-    <img src="assets/services-large.jpg" alt="Happy kids with great smiles">
+    <div class="service-slab service-slab--cosmetic">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-push-5 col-sm-6 col-sm-push-6">
+                    <h2 class="service-slab__title allow-orphan">Cosmetic Dentistry</h2>
+                    <h3 class="service-slab__byline">Get the smile you have always dreamed of</h3>
+                    <p class="service-slab__copy">Cosmetic dentistry is one of the most cost-effective ways to improve your appearance. A beautiful, bright, healthy smile will increase self-confidence and overall life satisfaction. Cosmetic dentistry includes things like tooth-colored restorations, dental implants, and crowns. We have many options, so please call us today!</p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/services/cosmetic-mobile.jpg" alt="Woman with wonderful smile" class="hidden-lg hidden-md hidden-sm">
+    </div>
 
 </section>
