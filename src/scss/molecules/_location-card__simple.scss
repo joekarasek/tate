@@ -1,4 +1,7 @@
 .location-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background: $c-white;
   margin: 30px 0;
   @media (max-width: $width-md) {
@@ -7,6 +10,18 @@
     background-color: rgba(255, 255, 255, 0);
     padding-left: 0;
     padding-right: 0;
+  }
+
+  &__office-image {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 991px) {
+      order: -1;
+    }
   }
 
   &__logo {
@@ -28,24 +43,28 @@
     padding-right: 10px;
   }
   &__doctor {
-    color: #5E308B;
-    font-weight: 400;
+    color: #435363;
+    font-weight: 500;
     font-size: 28px;
+    line-height: 1;
+    margin-top: 10px;
+    margin-bottom: 30px;
     @media (max-width: 550px) {
       font-size: 26px;
     }
-    margin-bottom: 10px;
-    margin-top: 10px;
   }
   &__doctor-sub {
     color: #444444;
   }
   &__address {
     color: #222222;
+    font-size: 22px;
   }
   &__map-link {
-    color: #3B5C0D;
+    color: #62891B;
+    font-family: $ff-mont;
     text-decoration: underline;
+    font-size: 16px;
   }
   &__new-patient-text {
     color: #474747;
@@ -57,12 +76,13 @@
     display: block;
     font-size: 44px;
     @include font-size(44px, 42px, 40px, 38px, 36px);
-    font-weight: 700;
-    color: #5E308B;
+    font-weight: 900;
+    font-family: $ff-lato;
+    color: #0F6F7D;
     margin-bottom: 15px;
     line-height: 1;
     &:hover {
-      color: #5E308B;
+      color: #0F6F7D;
       text-decoration: none;
     }
   }
@@ -83,7 +103,8 @@
     }
   }
   &__btn {
-    margin-bottom: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   &__jubilee {
     display: block;
