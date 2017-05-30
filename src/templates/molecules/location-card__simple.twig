@@ -25,6 +25,8 @@
             <a href="tel:{{ existingPhone }}" class="link-no-style location-card__existing-patient-number">{{ existingPhoneNoBreak }}</a>
         </p>
 
+        {% include 'atoms/hours-table.twig' %}
+
         <div class="location-card__social-media">
             {% include 'molecules/social-media-links.twig' %}
             <div class="clearfix"></div>

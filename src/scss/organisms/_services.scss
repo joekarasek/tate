@@ -35,11 +35,13 @@
       color: #066a78;
       line-height: 1;
       margin-bottom: 0;
+      @include font-size(56px, 48px, 36px, 40px, 35px);
     }
     &__byline {
       color: #4e5d6c;
       font-family: $ff-poly;
       font-style: italic;
+      @include font-size(32px, 28px, 20px, 24px, 20px);
     }
     &__copy {
       color: #585756;
@@ -50,7 +52,7 @@
       background-image: url(/assets/services/family-care.jpg);
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: right;
+      background-position: bottom right;
       @media (max-width: 767px ) {
         background-image: none;
       }
@@ -67,7 +69,16 @@
       background-image: url(/assets/services/cosmetic.jpg);
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: left;
+      background-position: bottom left;
+      @media (max-width: 767px ) {
+        background-image: none;
+      }
+    }
+    &--implants {
+      background-image: url(/assets/services/implants.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom left;
       @media (max-width: 767px ) {
         background-image: none;
       }
